@@ -18,10 +18,10 @@ export default function ProjectShell({ label, title, stack, interaction, outcome
     <div className="project-page">
       <header>
       <nav className="project-nav" aria-label="Project navigation">
-        <a href="/" className="project-back"><ArrowLeft size={16} /> Portfolio</a>
+        <a href={import.meta.env.BASE_URL} className="project-back"><ArrowLeft size={16} /> Portfolio</a>
         <div className="project-title-lockup"><span>{label}</span><strong>{title}</strong></div>
         <div className="project-nav-actions">
-          <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="Open GitHub"><Github size={17} /></a>
+          <a href="https://github.com/kljj365" target="_blank" rel="noreferrer" aria-label="Open Kyle Johnson's GitHub profile"><Github size={17} /></a>
           <button type="button" onClick={toggleTheme} aria-label="Toggle color mode">{theme === "dark" ? <Sun size={17} /> : <Moon size={17} />}</button>
         </div>
       </nav>

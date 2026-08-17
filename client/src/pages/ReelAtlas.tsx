@@ -137,7 +137,7 @@ export default function ReelAtlas() {
       </main>
       <footer className="project-postscript reel-atlas-postscript">
           <p><span>IMPLEMENTATION NOTE</span>This project keeps all network work client-side, caps the rendered result set at six, and separates the query, pending, success, empty, and error states so the student can explain the flow clearly in review.</p>
-          <a href="/">Return to portfolio <ArrowUpRight size={15} /></a>
+          <a href={import.meta.env.BASE_URL}>Return to portfolio <ArrowUpRight size={15} /></a>
       </footer>
     </ProjectShell>
   );
